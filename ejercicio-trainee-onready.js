@@ -48,10 +48,10 @@ function masBarato(listaVehiculos) {
   let precioVehiculo = Math.min(
     ...listaVehiculos.map((vehiculo) => vehiculo.precio)
   );
-  let vehiculoMasCaro = listaVehiculos.filter(
+  let vehiculoMasBarato = listaVehiculos.filter(
     (vehiculo) => Object.values(vehiculo)[3] === precioVehiculo
   );
-  return vehiculoMasCaro[0].marca + ' ' + vehiculoMasCaro[0].modelo;
+  return vehiculoMasBarato[0].marca + ' ' + vehiculoMasBarato[0].modelo;
 }
 
 //FUNCION PARA OBTENER MODELO CON LETRA 'Y'
